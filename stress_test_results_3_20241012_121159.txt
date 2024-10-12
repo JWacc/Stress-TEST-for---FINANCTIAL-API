@@ -1,0 +1,18 @@
+Stress Test Results for 3 simultaneous requests
+==================================================
+
+Request 1:
+Status: 200
+Response: {"external_simulation_id":"4324a2bd-a697-4330-98f5-d636cf1a1327","status":"PENDING","request_percentage":"1.6%","request_count":16,"version":"v39.7"}...
+------------------------------
+Request 2:
+Status: 200
+Response: {"external_simulation_id":"47eb8d64-786e-4d2d-9c59-ccf51fb471a4","status":"PENDING","request_percentage":"1.7000000000000002%","request_count":17,"version":"v39.7"}...
+------------------------------
+Request 3:
+Status: 200
+Response: {"external_simulation_id":"d8a181e5-7e35-4c7b-a530-d890aa9680ed","status":"PENDING","request_percentage":"1.6%","request_count":16,"version":"v39.7"}...
+------------------------------
+
+Profile Results:
+==================================================

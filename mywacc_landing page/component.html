@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWacc - Business Valuation Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="flex-col min-h-screen">
+        <header class="bg-background border-b px-4 sm:px-6 flex items-center justify-between h-16">
+            <div class="flex items-center gap-4 logoTitle">
+                <a href="#" class="flex items-center gap-2 imageItems">
+                    <img class="logoimg" src="./mywacc logo.png">
+                    <span class="text-lg font-semibold">MyWacc</span>
+                </a>
+                <span class="text-muted-foreground text-sm space">Powered by AI</span>
+            </div>
+            <nav class="nav hidden md:flex items-center gap-4 justify-center flex-1">
+                <a href="#pricing" class="text-sm font-medium hover:underline">Pricing</a>
+                <a href="#" class="text-sm font-medium hover:underline" id="contact-toggle">Contact</a>
+                <a href="#about-us" class="text-sm font-medium hover:underline">About Us</a>
+                <a href="#" class="text-sm font-medium hover:underline">Help</a>
+            </nav>
+            <div class="hidden md:flex items-center gap-4">
+                <a href="http://financial-api.brazilsouth.cloudapp.azure.com:3000/login" class="btn btn-primary">Login</a>
+                <a href="https://mywacc.brazilsouth.cloudapp.azure.com/api/add-new-user/" class="btn btn-secondary">Sign Up</a>
+            </div>
+        </header>
+        
+        <main class="flex-1">
+            <section class="hero">
+                <div class="container">
+                    <div class="content">
+                        <h1>Unlock the True Value of Your Business</h1>
+                        <p>MyWacc is a powerful AI-driven business valuation platform that provides accurate, data-driven
+                            insights to help you make informed decisions.</p>
+                        <p class="slogan">Minimize costs and shorten process times, without sacrificing the quality of the report.</p>
+                        <div class="cta-buttons">
+                            <a href="http://financial-api.brazilsouth.cloudapp.azure.com:3000/login" class="btn btn-primary">Get Started</a>
+                            <a href="#" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="wave-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path class="wave" fill="#0099ff" fill-opacity="1"
+                            d="M0,320L24,309.3C48,299,96,277,144,272C192,267,240,277,288,250.7C336,224,384,160,432,144C480,128,528,160,576,176C624,192,672,192,720,181.3C768,171,816,149,864,165.3C912,181,960,235,1008,245.3C1056,256,1104,224,1152,208C1200,192,1248,192,1296,181.3C1344,171,1392,149,1416,138.7L1440,128L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z">
+                        </path>
+                    </svg>
+                </div>
+            </section>
+            <script src="script.js"></script>
+            
+        
+            <section class="py-12 md:py-24">
+                <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 insigths">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Business Valuation</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" x2="12" y1="20" y2="10"></line>
+                                <line x1="18" x2="18" y1="20" y2="4"></line>
+                                <line x1="6" x2="6" y1="20" y2="16"></line>
+                            </svg>
+                        </div>
+                        <div class="card-content">
+                            <p>Leverage our AI-powered valuation models to get accurate and reliable business valuations.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn" href="#">Explore</a>
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Comparative Analysis</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" x2="12" y1="20" y2="10"></line>
+                                <line x1="18" x2="18" y1="20" y2="4"></line>
+                                <line x1="6" x2="6" y1="20" y2="16"></line>
+                            </svg>
+                        </div>
+                        <div class="card-content">
+                            <p>Compare your business against industry benchmarks and competitors to identify growth opportunities.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn" href="#">Explore</a>
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>AI-Powered Insights</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path>
+                                <path d="M9 18h6"></path>
+                                <path d="M10 22h4"></path>
+                            </svg>
+                        </div>
+                        <div class="card-content">
+                            <p>Gain actionable insights from our AI-driven analysis to make informed business decisions.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn" href="#">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <section class="py-12 md:py-24">
+                <div class="container px-4 md:px-6 description">
+                    <h2 class="text-2xl font-bold mb-8">Key Features</h2>
+                    <div class="grid gap-6 md:grid-cols-3 lg:gap-8">
+                        <div class="card">
+                            <h3 class="card-title">Methodology</h3>
+                            <p class="card-content">Leveraging IPEV-based methodologies, we're acclaimed for precision, transparency, and trustworthy results.</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="card-title">No intermediaries</h3>
+                            <p class="card-content">Our direct valuations empower users to shape outcomes, with the report's accuracy reflecting the precision of their inputs.</p>
+                        </div>
+                        <div class="card">
+                            <h3 class="card-title">Reliable data</h3>
+                            <p class="card-content">Our data sources are market-validated and widely recognized for their credibility and reliability.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-12 md:py-24">
+                <div class="container px-4 md:px-6">
+                  <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+                    <div class="card">
+                      <div class="card-header">
+                        <h3>Valuation Methodology</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M12 2v10"></path>
+                          <path d="M18.4 6.6a9 9 0 1 1-12.77.04"></path>
+                        </svg>
+                      </div>
+                      <div class="card-content">
+                        <p>Understand the advanced valuation methodologies used by MyWacc to provide accurate and reliable business valuations.</p>
+                      </div>
+                      <div class="card-footer">
+                        <a class="btn" href="#">Learn More</a>
+                      </div>
+                    </div>
+              
+                    <div class="card">
+                      <div class="card-header">
+                        <h3>Customizable Reports</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                          <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                        </svg>
+                      </div>
+                      <div class="card-content">
+                        <p>Generate comprehensive reports with detailed analysis and personalized recommendations.</p>
+                      </div>
+                      <div class="card-footer">
+                        <a class="btn" href="#">Explore</a>
+                      </div>
+                    </div>
+              
+                    <div class="card">
+                      <div class="card-header">
+                        <h3>Enterprise Data Input</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                          <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                          <path d="M3 12A9 3 0 0 0 21 12"></path>
+                        </svg>
+                      </div>
+                      <div class="card-content">
+                        <p>Seamlessly integrate your enterprise data into MyWacc for accurate and up-to-date business valuations.</p>
+                      </div>
+                      <div class="card-footer">
+                        <a class="btn" href="#">Explore</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <Span class="spanplans">
+                Queremos Brindarte  <span id="pricing" class="highlight wordHover"> Lo que necesitas</span> Explora nuestros Planes
+            </Span>
+                          <div class="plans-section">
+                <div class="plan-card">
+                    <img src="./plan sardina.png" alt="Plan Sardina">
+                    <h3>Plan Sardina</h3>
+                    <p>Perfecto para empresas emergentes.</p>
+                    <ul>
+                        <li>Informes de valoraciones</li>
+                        <li>Panel de control básico</li>
+                    </ul>
+                    <a href="#">Ver más</a>
+                </div>
+            
+                <div class="plan-card">
+                    <img src="./plan atun.png" alt="Plan Atún">
+                    <h3>Plan Atún</h3>
+                    <p>Diseñado para empresas en evolución.</p>
+                    <ul>
+                        <li>Informes de valoración personalizados</li>
+                        <li>Proyecciones financieras</li>
+                        <li>Panel de control básico</li>
+                    </ul>
+                    <a href="#">Ver más</a>
+                </div>
+            
+                <div class="plan-card">
+                    <img src="./barcoPesquero.png" alt="Plan Barco Pesquero">
+                    <h3>Plan Barco Pesquero</h3>
+                    <p>Ideal para PYMEs en crecimiento.</p>
+                    <ul>
+                        <li>Paquete de inicio y valoraciones detalladas</li>
+                        <li>Proyecciones financieras</li>
+                        <li>Pronóstico flujo de caja</li>
+                        <li>Panel de análisis financiero completo</li>
+                    </ul>
+                    <a href="#">Ver más</a>
+                </div>
+            
+                <div class="plan-card">
+                    <img src="./plantibueron.png" alt="Plan Tiburón">
+                    <h3>Plan Tiburón</h3>
+                    <p>Para grandes empresas e instituciones.</p>
+                    <ul>
+                        <li>Paquete de crecimiento avanzado</li>
+                        <li>Análisis comparativo e integraciones API premium</li>
+                        <li>Informe de pronóstico y proyecciones</li>
+                        <li>KAM financiero dedicado</li>
+                    </ul>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+            
+            
+              <section class="bg-muted py-12 md:py-24">
+                <div class="container px-4 md:px-6">
+                    <div class="grid gap-6 md:grid-cols-2 lg:gap-12">
+                        <div class="trusted">
+                            <h2 class="text-2xl font-bold mb-8 sm:text-4xl md:text-5xl">Trusted by Leading Businesses</h2>
+                            <p class="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
+                                We are proud to collaborate with industry leaders to bring you top-notch services, trusted by businesses of all sizes to provide accurate and reliable business valuations.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 mt-6">
+                            <div class="partner-logo-container">
+                                <img src="./corfo.png" alt="Corfo" class="partner-logo">
+                            </div>
+                            <div class="partner-logo-container">
+                                <img src="./microsoft.png" alt="Microsoft" class="partner-logo">
+                            </div>
+                            <div class="partner-logo-container">
+                                <img src="./Recurso-2.png" alt="Credex" class="partner-logo">
+                            </div>
+                            <div class="partner-logo-container">
+                                <img src="./udd.png" alt="Universidad del Desarrollo" class="partner-logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="about-us-section" id="about-us">
+                <div class="about-us-container">
+                    <img src="./aboutUs.png" alt="Imagen MyWacc" class="about-us-image">
+                    <div class="about-us-text">
+                        <h2>Sobre Nosotros</h2>
+                        <p>
+                            <span class="highlight">MyWacc</span> es una startup visionaria y desafiante que se conecta profundamente con cada <span class="highlight-keyword">emprendimiento</span>, <span class="highlight-keyword">pyme</span> y <span class="highlight-keyword">empresa</span> de América Latina. Nuestro propósito es crear una <span class="highlight-keyword">comunidad</span> sólida y <span class="highlight-keyword">empoderar</span> a los <span class="highlight-keyword">negocios</span> para que alcancen su máximo potencial.
+                        </p>
+                        <p>
+                            Nuestro equipo está compuesto por apasionados <span class="highlight-keyword">expertos</span> en <span class="highlight-keyword">finanzas</span> y <span class="highlight-keyword">tecnología</span> que han trabajado sin descanso para desarrollar una <span class="highlight-keyword">plataforma</span> que no solo es poderosa, sino también accesible para todos.
+                        </p>
+                        <p>
+                            Estamos aquí para derribar barreras y hacer que el <span class="highlight-keyword">análisis</span> y la <span class="highlight-keyword">valoración financiera</span> sean tan accesibles y comprensibles como deben serlo, brindando herramientas que democratizan el acceso a la <span class="highlight-keyword">información crucial</span> para el crecimiento de tu <span class="highlight-keyword">negocio</span>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+
+        <section id="contact-section" class="py-12 md:py-24">
+            <div class="container px-4 md:px-6">
+            <dialog id="contact-dialog" class="contact-dialog">
+                <form action="#" method="POST">
+                    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 cover">
+                        <div class="form-group">
+                            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                            <input type="text" id="name" name="name" class="input-field mt-1 block w-full" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" class="input-field mt-1 block w-full" required>
+                        </div>
+                        <div class="form-group md:col-span-2 coverBOX">
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="4" class="input-field mt-1 block w-full" required></textarea>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex justify-between items-center">
+                        <button type="submit" class="btn btn-secondary">Send Message</button>
+                        <button type="button" id="close-dialog" class="btn btn-danger">Close</button>
+                    </div>
+                </form>
+            </dialog>
+        </div>
+    </section>
+
+    <script>
+        // Obtener los elementos del DOM
+        const contactToggle = document.getElementById('contact-toggle');
+        const contactDialog = document.getElementById('contact-dialog');
+        const closeDialogBtn = document.getElementById('close-dialog');
+
+        // Abrir el diálogo cuando se hace clic en el botón "Get in Touch"
+        contactToggle.addEventListener('click', () => {
+            contactDialog.showModal();
+        });
+
+        // Cerrar el diálogo cuando se hace clic en el botón "Close"
+        closeDialogBtn.addEventListener('click', () => {
+            contactDialog.close();
+        });
+    </script>
+            
+            
+        </main>
+        <footer class="bg-background py-6">
+            <div class="container px-4 md:px-6">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 content2">
+                    <div>
+                        <h4 class="font-semibold mb-4">Company</h4>
+                        <ul>
+                            <li><a href="#" class="hover:underline">About Us</a></li>
+                            <li><a href="#" class="hover:underline">Careers</a></li>
+                            <li ><a href="#" class="hover:underline" id="contact-toggle">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">Resources</h4>
+                        <ul>
+                            <li><a href="#" class="hover:underline">Blog</a></li>
+                            <li><a href="#" class="hover:underline">Documentation</a></li>
+                            <li><a href="#" class="hover:underline">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">Legal</h4>
+                        <ul>
+                            <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                            <li><a href="#" class="hover:underline">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">Connect</h4>
+                        <ul>
+                            <li><a href="https://www.instagram.com/my_wacc/" class="hover:underline">Twitter</a></li>
+                            <li><a href="https://www.linkedin.com/company/mywacc/" class="hover:underline">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-8 text-center text-container">
+                    <p class="text">&copy; 2024 MyWacc. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
